@@ -1,4 +1,7 @@
 Chile1::Application.routes.draw do
+  get "benefits/index", :id => "benefits"
+  match "benefits" => "benefits#index"
+
   authenticated :user do
     root :to => 'home#index'
   end

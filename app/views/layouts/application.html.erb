@@ -8,28 +8,29 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $("#main").css("display", "none");
+                $("#main").fadeIn(2000);
+
+                
+        });
+    </script>
+
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
-    <div class="navbar navbar-fixed-top">
+<!--     <div class="navbar navbar-fixed-top">
       <nav class="navbar-inner">
         <div class="container">
           <%= render 'layouts/navigation' %>
         </div>
       </nav>
-    </div>
+    </div> -->
+
     <div id="main" role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
+
               <%= render 'layouts/messages' %>
               <%= yield %>
-            </div>
-          </div>
-          <footer>
-          </footer>
-        </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
+              <a href="#" class="btn" id="scroll-button"><i class="icon-arrow-down"></i></a></h2>
   </body>
 </html>

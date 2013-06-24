@@ -1,3 +1,42 @@
 @import "bootstrap";
-body { padding-top: 60px; }
+body { 
+	padding-top: 40px;
+
+	background-image: url(santiago2.jpg);
+  background-repeat: no-repeat no-repeat;
+  background-position: center top; 
+  background-attachment: fixed;
+  background-size: 100%;
+}
+h1 {
+	// font-family: futura;
+}
+
+#page2 {
+	margin-top:650px;
+	// background-color: rgba(0,186,132,0.9);
+	background-color: #309dd4;
+	height: 800px;
+}
+
+#page3 {
+	margin-top:600px;
+	// background-color: rgba(0,186,132,0.9);
+	background-color: #e8ca2b;
+	height: 800px;
+}
+
+#scroll-button {
+	position: fixed;
+	left: 50%;
+	bottom: 30px;
+}
+
 @import "bootstrap-responsive";
+
+.bg1 {
+	background-image: url(santiago2.jpg);
+}
+.bg2 {
+	background-image: url(gran.jpg);
+}
